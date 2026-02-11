@@ -1,0 +1,55 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: 600;
+}
+
+.sm {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.md {
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+/* Status-varianter */
+.online {
+  border-color: #7bd389;
+}
+
+.offline {
+  border-color: #ff7a7a;
+}
+
+.busy {
+  border-color: #ffd36e;
+}
+
+/* Liten “dot” före texten */
+.online::before,
+.offline::before,
+.busy::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.online::before {
+  background: #2ecc71;
+}
+
+.offline::before {
+  background: #e74c3c;
+}
+
+.busy::before {
+  background: #f1c40f;
+}
